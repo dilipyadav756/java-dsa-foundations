@@ -4,7 +4,7 @@ package polymorphism;
 // Each of these roles defines different behaviors of the person
 // depending on the object calling it.
 
- class person{
+class person{
      void display(){
          System.out.println(" person");
      }
