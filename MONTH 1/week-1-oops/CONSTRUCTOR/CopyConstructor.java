@@ -13,17 +13,22 @@ class copy{
         this.name = obj2.name;
         this.age = obj2.age;
     }
+    void display(){
+        System.out.println("name is " + name);
+        System.out.println("age is " + age);
+    }
 }
 
 
 public class CopyConstructor {
     public static void main(String[] args) {
+//        copy obj = new copy("John", 18);
         System.out.println("first object ");
-        copy obj = new copy("fcow ", 23);
-        System.out.println("name : " + obj.name + " age : " + obj.age);
+        copy obj = new copy("cow ", 23);
+       obj.display();
 
         System.out.println("second object ");
-        copy obj2 = new copy("skdsjbfhoiau ", 23);
-        System.out.println("name : " + obj2.name + " age : " + obj2.age);
+        copy obj2 = new copy(obj);
+       obj2.display();
     }
 }

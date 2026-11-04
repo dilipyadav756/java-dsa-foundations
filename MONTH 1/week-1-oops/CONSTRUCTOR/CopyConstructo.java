@@ -1,26 +1,31 @@
 package CONSTRUCTOR;
-class Person12 {
+class Student1 {
 
-    //private constructor
-    private Person12(){
-        System.out.println("somethis is private ");
-    }
-    public static void display(){
-        System.out.println("hello from jhsdlf");
+    String name;
+
+    // Private constructor
+    private Student1( String name) {
+       this .name =name ;
+        System.out.println("Private Constructor Called");
     }
 
+    // Public static method
+    public static void display() {
+
+        // Creating object inside the same class
+        Student1 s = new Student1("Dilip");
+
+        System.out.println("Student Name: " + s.name);
+    }
 }
+
 public class CopyConstructo {
-    public static void main(String[] args) {
-        // we can not create an object for private class
-        // private
-        Person12.display();
 
+    public static void main(String[] args) {
+
+        // Calling static method using class name
+        Student1.display();
+
+        // Student s = new Student(); // ERROR
     }
 }
-//Cannot be accessed outside its class
-//outside its class means form another class
-//Person is one class.
-//Main is another class.
-//Person() is private.
-//herefore, Main cannot access the private constructor.

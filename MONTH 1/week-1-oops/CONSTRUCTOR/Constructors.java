@@ -1,6 +1,6 @@
 package CONSTRUCTOR;
 class Student {
-    String name;
+    String name;// instan
 
     // Constructor
     Student(String name) {
@@ -15,7 +15,7 @@ class Student {
 
 public class Constructors {
     public static void main(String[] args) {
-        Student s1 = new Student("Vishnu");
+        Student s1 = new Student("Vishnu");//object
         s1.display();
     }
 }

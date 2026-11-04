@@ -1,6 +1,6 @@
 package CONSTRUCTOR;
 class parameterized{
-    String name;
+    String name;//instance variable
     int age;
     //parameterised constructor
     parameterized(String name, int age){
